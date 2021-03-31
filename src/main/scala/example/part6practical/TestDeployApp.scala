@@ -1,4 +1,4 @@
-package part6practical
+package example.part6practical
 
 import org.apache.spark.sql.{SaveMode, SparkSession}
 import org.apache.spark.sql.functions._

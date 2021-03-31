@@ -1,4 +1,4 @@
-package part4sql
+package example.part4sql
 
 object SparkShell extends App {
 

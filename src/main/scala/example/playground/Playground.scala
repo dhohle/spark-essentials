@@ -1,4 +1,4 @@
-package playground
+package example.playground
 
 import org.apache.spark.sql.{Row, SparkSession}
 import org.apache.spark.sql.types._
