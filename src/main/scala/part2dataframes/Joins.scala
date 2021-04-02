@@ -164,7 +164,9 @@ object Joins extends App {
     .option("dbtable", s"public.$tableName").load()
 
   val employeesDF = readTable("employees")
+  employeesDF.show()
   val salariesDF = readTable("salaries")
+  salariesDF.show()
   val deptManagersDF = readTable("dept_manager")
   val titlesDF = readTable("titles")
 
