@@ -55,7 +55,8 @@ object SparkSql extends App {
     val tableDF = readTable(tableName)
     tableDF.createOrReplaceTempView(tableName)
     if (shouldWriteToWarehouse) {
-      tableDF.write
+      tableDF
+        .write
         .mode(SaveMode.Overwrite)
         .saveAsTable(tableName)
     }

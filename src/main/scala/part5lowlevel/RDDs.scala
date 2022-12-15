@@ -3,6 +3,7 @@ package part5lowlevel
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
+import org.apache.spark.sql.types.{IntegerType, StructType}
 
 import scala.io.Source
 
@@ -127,5 +128,6 @@ object RDDs extends App {
   avgRatingsByGenreRDD.toDF().show()
   moviesRDD.toDF().groupBy(col("genre")).avg("rating").show()
 
+//  moviesRDD.toDF().sh
 
 }
